@@ -27,7 +27,7 @@
     --small-font-size: .75rem;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     :root {
         --big-font-size: 6rem;
         --h1-font-size: 2.25rem;
@@ -138,17 +138,18 @@ img {
     align-items: center;
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;
         top: var(--header-height);
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--white-color);
         transition: .5s ;
     }
+
 }
 
 .nav__item {
@@ -253,7 +254,7 @@ img {
 }
 
 .collection__img {
-    width: 250px;
+    width: 230px;
 }
 
 .collection__title {
@@ -469,7 +470,7 @@ img {
         margin-bottom: 0;
     }
 
-    div>i.nav__toggle, div>i.nav__cart {
+    div>i.nav__toggle{
         display: none;
     }
 
@@ -502,7 +503,7 @@ img {
     }
 
     .collection__img {
-        width: 130px;
+        width: 1000px;
     }
 
     .featured__container {
