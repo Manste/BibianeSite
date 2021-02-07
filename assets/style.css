@@ -99,6 +99,7 @@ img {
     color: var(--dark-color);
     margin: var(--mb-4) 0 var(--mb-1);
     text-align: center;
+    cursor: pointer;
 }
 
 .section-all {
@@ -190,7 +191,7 @@ img {
 
 /********* Home *********/
 .home {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-image: url(./img/components/background.jpg);
     background-position: center;
@@ -255,7 +256,7 @@ img {
 }
 
 .collection__img {
-    width: 230px;
+    width: 23gi0px;
 }
 
 .collection__title {
@@ -507,6 +508,14 @@ img {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .featured__container_2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured__container_3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -546,4 +555,37 @@ img {
 
 footer.footer.section {
     justify-content: center;
+    padding: 0;
+}
+
+/** additional style **/
+
+.l-main2 {
+    position: relative;
+    top: var(--header-height);
+    height: 100%;
+    padding: var(--header-height);
+}
+
+.sportheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: var(--header-height);
+    font-size: large;
+}
+
+header h1 {
+    font-size: 50px;
+    max-width: 500px;
+    text-align: center;
+}
+
+div.featured__product {
+    cursor: pointer;
+}
+
+#specialoffers {
+    margin-top: 15%;
 }
